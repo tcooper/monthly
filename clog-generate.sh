@@ -4,7 +4,7 @@
 #
 
 mfdir='/oasis/projects/nsf/use300/glock/machinestate/gordon'
-nodeview=/home/glock/src/sdsc/nodeview.4kenneth
+nodeview=$(which nodeview)
 
 cd $mfdir
 for mf in 201312*.db
