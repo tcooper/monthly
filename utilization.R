@@ -76,8 +76,8 @@ file.output = paste(sep='', file.output, '/', system, '-all.png')
 
 plot.legend <- c(  
     'Availability',
-    'CPU Load',
-    'Cores Req\'d',
+#   'CPU Load',
+#   'Cores Req\'d',
     'Utilization',
     'Memory Used',
     'Oasis Proj',
@@ -85,32 +85,32 @@ plot.legend <- c(
     )
 plot.colors <- c(
     '#E41A1C',
-    '#377EB866',
-    '#4DAF4A66',
+#   '#377EB866',
+#   '#4DAF4A66',
     '#984EA3',
     '#FF7F00',
     '#F781BF',
     '#A65628' )
 plot.ltys <- c(
     'solid',
-    'solid',
-    'solid',
+#   'solid',
+#   'solid',
     'solid',
     'solid',
     'solid',
     'solid' )
 plot.lws <- c(
     2,
-    2,
-    2,
+#   2,
+#   2,
     2,
     2,
     4,
     4 )
 plot.ismooth <- c(
     0,
-    3,
-    3,
+#   3,
+#   3,
     1,
     9,
     0,
