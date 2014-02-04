@@ -4,10 +4,8 @@
 #  in the queue for a given machinestate db
 #
 
-MACHINESTATE=/oasis/projects/nsf/use300/glock/machinestate/gordon
-
-nodeview --jobview 
-         --readdb=$MACHINESTATE/201312211400.db \
+nodeview --jobview \
+         --readdb=$1 \
          | sed -e 's/:/ /g' \
          | awk '/Queued/ { 
              chg = $3*$4*($7+$8/60+$9/3600); 
