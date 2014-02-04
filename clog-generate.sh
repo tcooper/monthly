@@ -3,7 +3,7 @@
 #  Use this script to generate Kenneth's queue clog metrics for a month
 #
 
-mfdir='/oasis/projects/nsf/use300/glock/machinestate/gordon'
+mfdir="/oasis/projects/nsf/use300/glock/machinestate/$(uname -n | cut -d - -f 1)"
 nodeview=$(which nodeview)
 
 cd $mfdir
