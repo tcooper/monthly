@@ -11,16 +11,16 @@ ismooth <- 2    # ismooth: 0=off, 1=smoothing, 2=fourier filter
 args <- commandArgs(TRUE)
 system <- args[1]
 
-xvec.start <- as.POSIXct(strptime('2014-01-01 00:00:00', '%Y-%m-%d %H:%M:%S'))
-xvec.stop  <- as.POSIXct(strptime('2014-01-31 23:59:59', '%Y-%m-%d %H:%M:%S'))
+xvec.start <- as.POSIXct(strptime('2014-10-01 00:00:00', '%Y-%m-%d %H:%M:%S'))
+xvec.stop  <- as.POSIXct(strptime('2014-10-31 23:59:59', '%Y-%m-%d %H:%M:%S'))
 
 #xvec.start <- (tail(compute.data$date, n=1) - 760*3600)
 #xvec.stop  <- Sys.time()
 
 file.output <- './'
 file.input <- list(
-    gordon='/users/u2/glockwood/public_html/status/gordon-ongoing.incl',
-    trestles='/users/u2/glockwood/public_html/status/trestles-ongoing.incl' )
+    gordon='/users/u2/tcooper/public_html/status/gordon-ongoing.incl',
+    trestles='/users/u2/tcooper/public_html/status/trestles-ongoing.incl' )
 
 compute.headers <- c('time',
             'nodes.tot',

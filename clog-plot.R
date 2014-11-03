@@ -20,8 +20,9 @@ compute.data$date <- as.POSIXct(compute.data$time,origin='1970-01-01')
 ################################################################################
 ### Set up data to plot
 ################################################################################
-xvec.start <- as.POSIXct(strptime('2014-04-01 00:00:00', '%Y-%m-%d %H:%M:%S'))
-xvec.stop  <- as.POSIXct(strptime('2014-04-30 23:59:59', '%Y-%m-%d %H:%M:%S'))
+xvec.start <- as.POSIXct(strptime('2014-10-01 00:00:00', '%Y-%m-%d %H:%M:%S'))
+xvec.stop  <- as.POSIXct(strptime('2014-10-31 23:59:59', '%Y-%m-%d %H:%M:%S'))
+
 # tmp.compute.xvec <- (compute.data$date > (tail(compute.data$date, n=1) - 760*3600))
 tmp.compute.xvec <- sapply(X=compute.data$date, FUN=function(x) { 
     if ( x >= xvec.start && x <= xvec.stop ) {
