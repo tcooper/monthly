@@ -11,9 +11,7 @@ sed -i -r '/^xvec.start\s/s/(20[0-9][0-9])-[0-9][0-9]-/'$LY'-'$LM'-/' ./clog-plo
 sed -i -r '/^xvec.stop\s/s/(20[0-9][0-9])-([0-9][0-9])-([0-9][0-9])/'$LY'-'$LM'-'$LDOLM'/' ./clog-plot.R
 
 ./clog-plot.R ./gordon-clog.incl > /dev/null
-./clog-plot.R ./trestles-clog.incl > /dev/null
 
 mv gordon-clog.incl-all.png gordon-queue-health-`date '+%Y-%m'`.png
-mv trestles-clog.incl-all.png trestles-queue-health-`date '+%Y-%m'`.png
 
 exit 0

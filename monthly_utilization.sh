@@ -11,9 +11,7 @@ sed -i -r '/^xvec.start\s/s/(20[0-9][0-9])-[0-9][0-9]-/'$LY'-'$LM'-/' ./utilizat
 sed -i -r '/^xvec.stop\s/s/(20[0-9][0-9])-([0-9][0-9])-([0-9][0-9])/'$LY'-'$LM'-'$LDOLM'/' ./utilization.R
 
 ./utilization.R ./gordon-ongoing.incl > /dev/null
-./utilization.R ./trestles-ongoing.incl > /dev/null
 
 mv gordon-ongoing.incl-all.png gordon-util-`date '+%Y-%m'`.png
-mv trestles-ongoing.incl-all.png trestles-util-`date '+%Y-%m'`.png
 
 exit 0
